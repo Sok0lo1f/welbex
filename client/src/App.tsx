@@ -37,7 +37,11 @@ const App = () => {
         return () => {
             isMount = false
         }
-    }, [currentPage, filterParams])
+    }, [currentPage])
+
+    useEffect(() => {
+        setCurrentPage(1)
+    }, [filterParams])
 
     return (
         <div className='app'>
