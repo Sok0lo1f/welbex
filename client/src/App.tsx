@@ -37,17 +37,14 @@ const App = () => {
         return () => {
             isMount = false
         }
-    }, [currentPage])
-
-    useEffect(() => {
-        setCurrentPage(1)
-    }, [filterParams])
+    }, [currentPage, filterParams])
 
     return (
         <div className='app'>
             <h1>Тестовое задание</h1>
             <Filter
                 onClick={(type, column, value) => {
+                    setCurrentPage(1)
                     setFilterParams({
                         [column]: value,
                         type,
