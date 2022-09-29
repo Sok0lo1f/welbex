@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+   
+    &__item {
+        padding: 10px;
+        cursor: pointer;
+        color: #039;
+
+        &.--active {
+            color: rgb(0, 22, 65);
+            font-weight: bold;
+        }
+    }
+}

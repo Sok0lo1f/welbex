@@ -1,0 +1,18 @@
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    select, input, button {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #039;
+        cursor: pointer;
+    }
+    button {
+        background-color: rgb(53, 119, 252);
+        color: white;
+        border: 0;
+    }
+}
